@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Code2Crypto - PORTFOLIO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ever Safe Consultancy | Job RÃ©sumÃ©</title>
+
   <style>
     * {
       margin: 0;
@@ -14,7 +15,7 @@
     html, body {
       height: 100%;
       font-family: 'Poppins', sans-serif;
-      color: #fff;
+      color: #ffffff;
       overflow: hidden;
     }
 
@@ -30,33 +31,29 @@
 
     .overlay {
       position: fixed;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.6);
+      inset: 0;
+      background: rgba(0, 0, 0, 0.65);
       z-index: -1;
     }
 
     .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 60px 20px;
       height: 100%;
       overflow-y: auto;
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 20px;
-      padding: 40px 30px;
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      text-align: center;
-      max-width: 800px;
+      max-width: 850px;
       width: 100%;
-      animation: fadeIn 1.5s ease forwards;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(12px);
+      border-radius: 22px;
+      padding: 40px 30px;
+      border: 1px solid rgba(255,255,255,0.25);
+      animation: fadeIn 1.3s ease;
+      text-align: center;
     }
 
     @keyframes fadeIn {
@@ -65,8 +62,8 @@
     }
 
     .profile-pic {
-      width: 140px;
-      height: 140px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid #fff;
@@ -74,117 +71,149 @@
     }
 
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
+      font-size: 2.6em;
+      margin-bottom: 5px;
     }
 
-    p {
-      font-size: 1.1em;
-      margin-bottom: 20px;
-      line-height: 1.6;
+    .subtitle {
+      font-size: 1.2em;
+      opacity: 0.9;
+      margin-bottom: 25px;
     }
 
-    .info-box {
+    .section {
+      margin-top: 30px;
       text-align: left;
-      margin-top: 25px;
     }
 
-    .info-box h2 {
-      font-size: 1.5em;
-      margin-bottom: 10px;
-      border-bottom: 1px solid #fff;
-      padding-bottom: 5px;
+    .section h2 {
+      font-size: 1.6em;
+      margin-bottom: 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.4);
+      padding-bottom: 6px;
     }
 
-    .info-box ul {
+    ul {
       list-style: none;
-      padding: 0;
-      line-height: 1.8;
+      line-height: 1.9;
+      font-size: 1.05em;
     }
 
-    .info-box ul li::before {
-      content: "› ";
+    ul li::before {
+      content: "â€º ";
       color: #00c6ff;
+      font-weight: bold;
     }
 
-    .telegram-btn {
-      display: inline-block;
+    /* CONTACT ICONS */
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
       margin-top: 25px;
-      padding: 12px 25px;
-      background: linear-gradient(135deg, #00c6ff, #0072ff);
-      border: none;
-      border-radius: 50px;
-      color: white;
-      font-size: 1.1em;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      box-shadow: 0 0 10px #00c6ff;
+      flex-wrap: wrap;
     }
 
-    .telegram-btn:hover {
-      background: linear-gradient(135deg, #0072ff, #00c6ff);
-      transform: scale(1.05);
+    .contact-icons a {
+      width: 55px;
+      height: 55px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+      box-shadow: 0 0 10px rgba(0,198,255,0.4);
+    }
+
+    .contact-icons a:hover {
+      transform: scale(1.15);
       box-shadow: 0 0 20px #00c6ff;
     }
 
+    .contact-icons img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .phone-text {
+      text-align: center;
+      margin-top: 12px;
+      font-size: 1.1em;
+      color: #ffffff;
+    }
+
     footer {
-      margin-top: 40px;
+      text-align: center;
+      margin-top: 35px;
       font-size: 0.9em;
       color: #ccc;
     }
   </style>
 </head>
+
 <body>
 
   <!-- Background Video -->
   <video autoplay muted loop>
-    <source src="bg.mp4" type="video/mp4" />
-    Your browser does not support HTML5 video.
+    <source src="bg.mp4" type="video/mp4">
   </video>
   <div class="overlay"></div>
 
-  <!-- Content -->
   <div class="container">
     <div class="card">
-      <img src="file.png" alt="ANAIK" class="profile-pic" />
-      <h1>ANAIK</h1>
-      <p>Hi! I'm ANAIK— I Am Coder And Developer Of Code2Crypto</p>
 
-      <div class="info-box">
-        <h2>About Me</h2>
+      <img src="file.png" alt="Ever Safe Consultancy" class="profile-pic">
+
+      <h1>EVER SAFE CONSULTANCY</h1>
+      <div class="subtitle">
+        Smart Insurance Solutions at Affordable Cost
+      </div>
+
+      <div class="section">
+        <h2>Our Services</h2>
         <ul>
-          <li><strong>Country:</strong> India</li>
-          <li><strong>Age:</strong> 1*/li>
-          <li><strong>Class:</strong> Collage</li>
-          <li><strong>Hobbies:</strong> ᴡᴇʙ3 ᴇɴᴛʜᴜꜱɪᴀꜱᴛ | ɢʀᴏᴜᴘ ᴍᴏᴅᴇʀᴀᴛᴏʀ | ꜱʜɪʟʟᴇʀ | ᴄᴏᴅᴇʀ</li>
+          <li>Vehicle Loan</li>
+          <li>Vehicle Insurance</li>
+          <li>Tour Insurance</li>
+          <li>House Insurance</li>
+          <li>Building Insurance</li>
+          <li>Accident Insurance</li>
+          <li>Health Insurance</li>
         </ul>
       </div>
 
-      <div class="info-box">
-        <h2>Skills</h2>
-        <ul>
-          <li>PHP & Python Bots</li>
-          <li>HTML, CSS, JS</li>
-          <li>Telegram Bot Development</li>
-          <li>Web UI/UX Design</li>
-          <li>Automation Systems</li>
-        </ul>
+      <div class="section">
+        <h2>Contact Us</h2>
+
+        <div class="contact-icons">
+          <!-- EMAIL -->
+          <a href="mailto:eversafeconsultancy@gmail.com">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+          </a>
+
+          <!-- WHATSAPP -->
+          <a href="https://chat.whatsapp.com/KJz9fcvmbDK9ANGEnr8XN5?mode=gi_t" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+          </a>
+
+          <!-- PHONE -->
+          <a href="tel:+919447519556">
+            <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone">
+          </a>
+        </div>
+
+        <div class="phone-text">
+          ðŸ“ž +91 94475 19556
+        </div>
       </div>
 
-      <a href="https://t.me/Code2Crypto" class="telegram-btn" target="_blank">Join My Telegram</a>
+      <footer>
+        Â© 2025 Ever Safe Consultancy. All Rights Reserved.
+      </footer>
+
     </div>
-
-    <footer>© 2025 CODE2CRYPTO. All rights reserved.</footer>
   </div>
 
 </body>
 </html>
-
-
-* MADE BY @Code2Crypto OUR TELEGRAM CHANNELL  </div>
-
-</body>
-</html>
-
-
-* MADE BY @Code2Crypto OUR TELEGRAM CHANNELELL
