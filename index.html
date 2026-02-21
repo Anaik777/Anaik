@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ever Safe Consultancy | Job RÃ©sumÃ©</title>
+  <title>Ever Safe Consultancy</title>
 
   <style>
     * {
@@ -14,7 +14,7 @@
 
     html, body {
       height: 100%;
-      font-family: 'Poppins', sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       color: #ffffff;
       overflow: hidden;
     }
@@ -71,12 +71,12 @@
     }
 
     h1 {
-      font-size: 2.6em;
-      margin-bottom: 5px;
+      font-size: 2.4em;
+      margin-bottom: 10px;
     }
 
     .subtitle {
-      font-size: 1.2em;
+      font-size: 1.1em;
       opacity: 0.9;
       margin-bottom: 25px;
     }
@@ -95,23 +95,28 @@
 
     ul {
       list-style: none;
-      line-height: 1.9;
+      line-height: 2;
       font-size: 1.05em;
     }
 
+    ul li {
+      position: relative;
+      padding-left: 20px;
+    }
+
     ul li::before {
-      content: "â€º ";
-      color: #00c6ff;
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: #ffffff;
       font-weight: bold;
     }
 
-    /* CONTACT ICONS */
     .contact-icons {
       display: flex;
       justify-content: center;
       gap: 25px;
       margin-top: 25px;
-      flex-wrap: wrap;
     }
 
     .contact-icons a {
@@ -123,24 +128,15 @@
       align-items: center;
       justify-content: center;
       transition: 0.3s;
-      box-shadow: 0 0 10px rgba(0,198,255,0.4);
     }
 
     .contact-icons a:hover {
       transform: scale(1.15);
-      box-shadow: 0 0 20px #00c6ff;
     }
 
     .contact-icons img {
       width: 30px;
       height: 30px;
-    }
-
-    .phone-text {
-      text-align: center;
-      margin-top: 12px;
-      font-size: 1.1em;
-      color: #ffffff;
     }
 
     footer {
@@ -187,29 +183,22 @@
         <h2>Contact Us</h2>
 
         <div class="contact-icons">
-          <!-- EMAIL -->
           <a href="mailto:eversafeconsultancy@gmail.com">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
           </a>
 
-          <!-- WHATSAPP -->
-          <a href="https://chat.whatsapp.com/KJz9fcvmbDK9ANGEnr8XN5?mode=gi_t" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+          <a href="https://wa.me/919447519556" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
           </a>
 
-          <!-- PHONE -->
           <a href="tel:+919447519556">
-            <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone">
+            <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png">
           </a>
-        </div>
-
-        <div class="phone-text">
-          ðŸ“ž +91 94475 19556
         </div>
       </div>
 
       <footer>
-        Â© 2025 Ever Safe Consultancy. All Rights Reserved.
+        © 2025 Ever Safe Consultancy. All Rights Reserved.
       </footer>
 
     </div>
